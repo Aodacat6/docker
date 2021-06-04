@@ -15,6 +15,13 @@ import java.util.Queue;
 public class AllTest {
 
     public static void main(String[] args){
-
+        String str = null;
+        switch (str) {
+            case "111" :
+                System.out.println(11);
+                break;
+            default:
+                System.out.println("default");
+        }
     }
 }
