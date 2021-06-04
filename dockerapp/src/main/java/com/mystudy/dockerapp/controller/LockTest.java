@@ -23,14 +23,13 @@ public class LockTest {
         }
         list.forEach(thread -> {
             thread.start();
-            thread.run();
         });
     }
 }
 
 class ThreadTest extends Thread{
 
-    private static int i;
+    private int i;
 
 /*    private static int lock() {
         Lock lock = new ReentrantLock();
