@@ -18,4 +18,8 @@ public class T {
     }
 
     private String id;
+
+    private Integer no;
+
+    private int age;
 }
