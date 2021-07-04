@@ -1,2 +1,18 @@
 server:
-  port: 8080
+  port: 8081
+
+#xxl:
+#  job:
+#    admin:
+#      address: http://192.168.31.144:18081/xxl-job-admin
+#    executor:
+#      appname: xyy-business-dev
+#      # 执行器IP [选填]：默认为空表示自动获取IP，多网卡时可手动设置指定IP，
+#      # 该IP不会绑定Host仅作为通讯实用；地址信息用于 "执行器注册" 和 "调度中心请求并触发任务"
+#      ip: http://192.168.31.144
+#      # 执行器端口号 [选填]：小于等于0则自动获取；默认端口为9999，单机部署多个执行器时，
+#      # 注意要配置不同执行器端口
+#      port: 9997
+#      logpath: /xxl-job-log
+#      logretentiondays: 10
+#    accessToken:
