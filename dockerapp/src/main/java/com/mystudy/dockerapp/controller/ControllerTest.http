@@ -1,0 +1,8 @@
+GET http://www.baidu.com/
+Accept: application/json
+
+###
+GET http://localhost:8081/get
+Accept: application/json
+
+###
