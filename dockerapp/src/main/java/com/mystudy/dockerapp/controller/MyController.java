@@ -2,6 +2,7 @@ package com.mystudy.dockerapp.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -21,5 +22,15 @@ public class MyController {
     @GetMapping("/get")
     public String get(String name, String password, String type) {
        return "name: " + name + "password: " + password + "type: " + type;
+    }
+
+    @PostMapping("/submit")
+    public String submit(){
+        return "submit success";
+    }
+
+    @GetMapping("/cancle")
+    public String cancle() {
+        return "cancle success";
     }
 }
