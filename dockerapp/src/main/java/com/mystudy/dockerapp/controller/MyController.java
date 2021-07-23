@@ -2,12 +2,11 @@ package com.mystudy.dockerapp.controller;
 
 import com.mystudy.dockerapp.annotation.MyAnnotation;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.View;
+
+import javax.validation.constraints.NotNull;
 
 /**
  * @author ：songdalin
@@ -34,5 +33,10 @@ public class MyController {
     @GetMapping("/cancle")
     public String cancle() {
         return "cancle success";
+    }
+
+    @GetMapping("/testnot/{str}")
+    public String test(@PathVariable("str") @NotNull(message = "not null~~") String str) {
+        return str;
     }
 }
