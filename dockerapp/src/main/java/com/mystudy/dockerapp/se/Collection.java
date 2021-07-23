@@ -2,6 +2,8 @@ package com.mystudy.dockerapp.se;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author ：songdalin
@@ -27,9 +29,20 @@ public class Collection {
 
     public static void main(String[] args){
         //zuoyouyiyunsuan();
-        arrayList();
+        //arrayList();
+
+        ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
+        concurrentHashMap.put(1, 22);
+
 
     }
+//
+//    {
+//        Long a = new Long(1L);
+//        Long b = new Long(1L);
+//        System.out.println(Objects.equals(a, b));
+//    }
+
 
     private static void arrayList() {
         List<String> list = new ArrayList<>();
