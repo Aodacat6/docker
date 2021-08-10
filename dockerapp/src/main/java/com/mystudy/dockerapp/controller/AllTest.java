@@ -1,9 +1,8 @@
 package com.mystudy.dockerapp.controller;
 
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.Queue;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @author ：songdalin
@@ -15,13 +14,23 @@ import java.util.Queue;
 public class AllTest {
 
     public static void main(String[] args){
-        String str = null;
-        switch (str) {
-            case "111" :
-                System.out.println(11);
-                break;
-            default:
-                System.out.println("default");
-        }
+//        String str = null;
+//        switch (str) {
+//            case "111" :
+//                System.out.println(11);
+//                break;
+//            default:
+//                System.out.println("default");
+//        }
+
+        List<String> list = new ArrayList<>();
+        list.add("ddd");
+        list.add(null);
+
+        System.out.println(list);
+
+        list = list.stream().filter(l -> Objects.nonNull(l)).collect(Collectors.toList());
+        System.out.println(list);
+
     }
 }
