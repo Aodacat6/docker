@@ -20,16 +20,16 @@ server:
 #      logpath: /xxl-job-log
 #      logretentiondays: 10
 #    accessToken:
-spring:
-
-  session:
-    store-type: redis
-
-
-  redis:
-    host: localhost
-    port: 6379
-    password: root
-    database: 0
+#spring:
+#
+#  session:
+#    store-type: redis
+#
+#
+#  redis:
+#    host: localhost
+#    port: 6379
+#    password: root
+#    database: 0
 
 

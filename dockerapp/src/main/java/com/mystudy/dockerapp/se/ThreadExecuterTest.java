@@ -24,7 +24,7 @@ public class ThreadExecuterTest {
      */
 
     public static void main(String[] args){
-        int core = 5;
+/*        int core = 5;
         int max = 10;
         long keepAliveTime = 10;
         TimeUnit timeUnit = TimeUnit.SECONDS;
@@ -46,7 +46,9 @@ public class ThreadExecuterTest {
         }
 
         //executor.shutdown();
-        executor.shutdownNow();
+        executor.shutdownNow();*/
+
+        ExecutorService executorService = Executors.newSingleThreadExecutor();
 
     }
 }
