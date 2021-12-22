@@ -1,7 +1,10 @@
 server:
   port: 8082
 
-
+env:
+  A
+location:
+  com.mystudy.dockerapp.dynloadclass.special
 
 
 
