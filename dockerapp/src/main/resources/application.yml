@@ -29,10 +29,11 @@ location:
 #    store-type: redis
 #
 #
-#  redis:
-#    host: localhost
-#    port: 6379
-#    password: root
-#    database: 0
+spring:
+  redis:
+    host: 106.15.207.98
+    port: 6379
+    password: 12345678Qa!
+    database: 0
 
 
